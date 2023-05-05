@@ -19,13 +19,13 @@ void trimString(string &str) {
   str = str.substr(first, (last - first + 1));
 }
 
-typedef struct Variable {
+struct Variable {
   string type;
   string name;
   string value;
 
   Variable(string type, string name) : type(type), name(name) {}
-} Variable;
+};
 
 vector<Variable> variables;
 
