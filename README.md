@@ -1,6 +1,8 @@
 
 ## About
 
+This is not the official library's repo! Just some tests I made :P
+
 BNFLite is a C++ template library for lightweight flexible grammar parsers.
 BNFLite offers creative approach when the developer can specify 
 a language for further parsing directly in the C++ code.

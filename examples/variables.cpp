@@ -61,13 +61,12 @@ Var DoRightSide(vector<Var> &res) {
   return Var(res.front(), res.back());
 }
 
-const char *vars =
-    "   string      nome     =      Gustavo Cesar     ;\n"
-    "                 int idade      =  20;\n"
-    "char     letraInicial =    G   ;\n"
-    " bool         seraQueIssoFunciona                    = true;\n"
-    "          double         \n"
-    "     numero  =  223.32;";
+const char *vars = "   string      name     =      Adalberto Clovis     ;\n"
+                   "                 int age      =  32;\n"
+                   "char     initialNameLetter =    A   ;\n"
+                   " bool         doesItWork                    = true;\n"
+                   "          double         \n"
+                   "     randomNumber  =  3.14159;";
 
 int main() {
   Token space(" \t");
@@ -125,6 +124,6 @@ int main() {
     return 0;
   }
 
-  cout << "Deu errado (" << res << ")" << endl;
+  cout << "Something went wrong (" << res << ")" << endl;
   return -1;
 }

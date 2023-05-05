@@ -25,9 +25,9 @@ vector<Section> sections;
 
 Var DoSection(vector<Var> &res) {
 
-  cout << "Entrou section" << endl;
+  // cout << "Entrou section" << endl;
 
-  printVec(res);
+  // printVec(res);
 
   string name = string(res[1].text, res[1].length);
 
@@ -38,9 +38,9 @@ Var DoSection(vector<Var> &res) {
 
 Var DoEntry(vector<Var> &res) {
 
-  cout << "Entrou entry" << endl;
+  // cout << "Entrou entry" << endl;
 
-  printVec(res);
+  // printVec(res);
 
   string key = string(res[0].text, res[0].length);
   string value = string(res[2].text, res[2].length);
@@ -50,12 +50,12 @@ Var DoEntry(vector<Var> &res) {
   return Var(res.front(), res.back());
 }
 
-const char *in = "    [             Gustavo       ]   \n"
-                 "   Nome|Gustavo Cesar Venancio Monteiro\n"
-                 "   Idade   |   20 anos\n"
-                 "   CEP | 623.602.833-83\n"
-                 "   [ Defines  ] \n"
-                 " TemMaisAlgumaCoisa|Nao, pode encerrar\n";
+const char *in = "    [             Person       ]   \n"
+                 "   Name|Adalberto Junior Neto\n"
+                 "   Idade   |   64 years old\n"
+                 "   CPF     |                  111.111.111-11\n"
+                 "   [ LibraryClasses  ] \n"
+                 " AnythingElse| nope, go ahead...\n";
 
 int main() {
   Token delimiter(" \t\n\r");
@@ -100,11 +100,11 @@ int main() {
       cout << endl;
     }
 
-    cout << "Deu bom :)" << endl;
+    cout << "Done :)" << endl;
     return 0;
   }
 
-  cout << "Deu ruim :/" << endl;
+  cout << "Something went wrong :/" << endl;
 
   return -1;
 }
